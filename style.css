@@ -1,0 +1,33 @@
+body {
+    width: 50%;
+    margin: 0px auto;
+}
+header {
+    background-color:blanchedalmond;
+    color:black;
+     text-align: center;
+     padding:5px;
+}
+nav{
+    text-align: center; 
+    line-height: 30px; 
+    background-color:lightgray; 
+    height: 300px; 
+    width: 100px; 
+    float: left; 
+    padding: 5px;
+}
+section{ 
+    width: 250px;
+    float:left;
+     padding:10px; 
+    margin:0px auto;
+
+}
+footer{
+    background-color: blanchedalmond; 
+    color: black;
+     text-align: center; 
+     padding: 5px;
+     clear: both;
+}
