@@ -1,0 +1,35 @@
+.container {
+    border: 1px black solid;
+    border-radius: 15px;
+    background-color: rgb(180, 138, 180);
+    margin: 0 auto;
+    width: 25%;
+    overflow: hidden;
+}
+
+body {
+    font-family: helvetica, arial;
+    font-size: 14px;
+}
+.mainHeader {
+    background-color: lavender;
+    text-align:center;
+    color:black;
+    padding: 10px;
+}
+
+#form {
+    margin: 0 auto;
+    text-align: center;      
+    color:black;
+    padding: 20px; 
+}
+
+#label {
+text-align:center;
+}
+
+.registrationLabel {
+    text-align:center;
+  
+}

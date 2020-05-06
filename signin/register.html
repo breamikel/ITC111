@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Sign In</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="mainHeader">
+        <p>Have an account?</p>
+        
+            <a href="signin.html">Log in</a>
+            </header>
+
+            <section>
+                <form onsubmit="alert('Submit!'); return false" method="POST">
+                    <div id="form">
+
+
+
+                        <!-- Name Section Start-->
+                        <div class="registrationLabel">
+
+                            <label>First Name</label>
+                        </div>
+                        
+                            <input type="text" id="fname" name="firstname" placeholder="Your first name">
+                       
+                        <div class="registrationLabel">
+                            <label>Last Name</label>
+                        </div>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                        <!-- Name Section End-->
+                        
+                        <!-- Birthday Section Start-->
+                        <div class="registrationLabel">
+                            <label>Birthday</label>
+                        </div>
+                        
+                            <input type="date" id="date" name="date" placeholder="What is your birthdate?">
+                            <!-- Birthday Section End-->
+
+                               <!-- Email Section Start-->
+                        <div class="registrationLabel">
+                            <label>Email</label>
+                        </div>
+                        
+                            <input type="email" id="email" name="email" placeholder="Enter e-mail address">
+                            <!-- Email Section End-->
+
+                              <!-- Username Section Start-->
+                        <div class="registrationLabel">
+                            <label>Username</label>
+                        </div>
+                        
+                            <input type="text" id="username" name="username" placeholder="Enter a username">
+                            <!-- Username Section End-->
+
+                            <!-- Password Section Start-->
+                        <div class="registrationLabel">
+                            <label>Password</label>
+                        </div>
+                        
+                            <input type="password" id="password" name="password" placeholder="Enter a password">
+                            <!-- Password Section End-->
+                        <br>
+                        <br>
+
+                        <div>
+                                <a href="#"> Forgot Username or Password</a>
+                                <br>
+                                <br>
+                                <input type="submit" name="submit">
+                        </div>
+                    </div>
+                    <br>
+                </form>
+            </section>
+
+         </div>
+       
+
+    </div>
+
+
+</body>
