@@ -39,7 +39,7 @@ h2 {
     position:fixed;
      bottom:0;
      padding-bottom: 50px;
-     padding-left:0px;
+     right: 0px;
      height: 40px;
      width:100%;
      background-color:  rgb(8, 8, 8);
