@@ -1,74 +1,52 @@
-/*
-    This style will contol the look of ul elements on the page.
-*/
-ul {
-    background-color: #333333;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-/*
-    This style floats 'li' elements to the left.
-*/
-li {
-    float: left;
-}
-/*
-    This effects 'display', 'color' and 'padding' of both 'li' and
-    'a' elements individually.
-*/
-li, a {
-    display: inline-block;
-    color: white;
-    padding: 8px;
-}
-/*
-    This style effects the 'background-color' of only an 'a' element
-    that is inside of 'li' elements, based on the cursors hover state.
-*/
-li a:hover {
-    background-color: #111111;
-}
-a {
-    text-decoration: none;
-}
-div h2, h4, p {
-    color: azure;
-}
-/*
-    This style effects the element with the id of #outerDiv.
-*/
-#outerDiv {
+.main{
+    background-color: cornflowerblue;
     margin: 0 auto;
-    width: 75%;
+    padding: 2px 2px auto;
+    width: max-content;
     overflow: hidden;
+
 }
-/*
-    This style aligns 2 of the inner div's to the left 
-*/
-#innerDivBodyLeft_Default,#innerDivBodyRight {
-    text-align: center;
+
+.row {
+    margin: 0 2px auto;
+    height: max-content;
+    overflow: hidden;
+
+}
+
+#display1 {
+    margin: 1px 0;
+    color: red;
+    text-align: right;
+    width: 270px;
+    font-size: 18px;
+    height: 18px;
+
+}
+
+#display2 {
+    background-color: lightseagreen;
+    margin: 1px 0 auto;
+    color: red;
+    text-align: right;
+    font-size: xx-large;
+    width: 273px;
+    height: 40px;
+}
+
+button {
+    background-color: white;
+    font-size: xx-large;
+    width: 70px;
+    height: 70px;
     float: left;
-    height: 500px;
 }
-/*
-    This style effects the element with the id of #innerDivBodyLeft.
-*/
-#innerDivBodyLeft_Default {
-    background-color: cadetblue;
-    width: 20%;
+
+button:hover {
+    background-color: lightblue;
+
 }
-/*
-    This style effects the element with the id of #innerDivBodyRight.
-*/
-#innerDivBodyRight {
-    background-color: blue;
-    width: 80%;
-}
-#divLeft_Default{
-    display: block;
-}
-#divLeft_CELinks, #divLeft_ALinks, #divLeft_RLinks{
-    display: none;
+
+button:active {
+    background-color: lightgreen;
 }

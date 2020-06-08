@@ -1,47 +1,55 @@
-var idSetting = ["divLeft_Default","divLeft_CELinks","divLeft_ALinks","divLeft_RLinks","divRight","ls_Heading","rs_Heading"];
+var val1, val2;
+function loadDisplay(num) {
+    document.getElementById('display2').value += num.value.toString();
+}
+function delFromRight() {
+    document.getElementById('display2').value = document.getElementById('display2').value.slice(0,-1);
+}
+function clearDisplay() {
+    document.getElementById('display2').value = ""
 
-var home = {
-    dispSettings : ["block","none","none","none"],
-    innerHTMLSettings : ["Home link clicked. Defaul text displayed.","ITC-111","Intro to Programming <br>w/HTML, CSS & JavaScript"]
 }
-var classExercises = {
-    dispSettings : ["none","block","none","none"],
-    innerHTMLSettings : ["Defaul description for the Class Exercise Link.","Class Exercise Links","Exercise Description"]
+function setOperator(trg) {
+    val1 = document.getElementById('display2').value+ " " + trg.value;
+    document.getElementById('display1').innerHTML = val1;
+    document.getElementById('display2').value = "";
 }
-var assignments = {
-    dispSettings : ["none","none","block","none"],
-    innerHTMLSettings : ["Defaul description for the Assignment Link.","Assignment Links","Assignment Description"]
-}
-var resources = {
-    dispSettings : ["none","none","none","block"],
-    innerHTMLSettings : ["Defaul description for the Resouce Link.","Resource Topics","Resource Catalouge"]
-}
-function changeLinkText(lnk) {
-    let lnkObj;
-    switch(lnk){
-        case 'home':
-            lnkObj = home;
+function doMath() {
+    alert('reached');
+    val2 = document.getElementById('display2').value;
+    var result;
+    switch(val1.slice(-1)){
+        case '+':
+            result = parseInt(val1) + parseInt(val2);
             break;
-        case 'classEx':
-            lnkObj = classExercises;
+        case '-':
+            result = parseInt(val1) - parseInt(val2);
             break;
-        case 'assign':
-            lnkObj = assignments;
+        case '*':
+            result = parseInt(val1) * parseInt(val2);
             break;
-        case 'resource':
-            lnkObj = resources;
+        case '/':
+            result = parseInt(val1) / parseInt(val2);
             break;
-        default:
+        case 'sqrt':
+            // do square root math
             break;
+        case 'pow':
+            // do eponent math
+            break;
+
+
     }
-    document.getElementById(idSetting[0]).style.display = lnkObj.dispSettings[0];
-    document.getElementById(idSetting[1]).style.display = lnkObj.dispSettings[1];
-    document.getElementById(idSetting[2]).style.display = lnkObj.dispSettings[2];
-    document.getElementById(idSetting[3]).style.display = lnkObj.dispSettings[3];
-    document.getElementById(idSetting[4]).innerHTML = lnkObj.innerHTMLSettings[0];
-    document.getElementById(idSetting[5]).innerHTML = lnkObj.innerHTMLSettings[1];
-    document.getElementById(idSetting[6]).innerHTML = lnkObj.innerHTMLSettings[2];
+    document.getElementById('display1').innerHTML = "";
+    document.getElementById('display2').value = result;
+    val1 = null;
+    val2 = null;
+    result = null;
 }
-function changeDivRightText(txt) {  
-    document.getElementById('rs_Heading').innerHTML = txt;
-}
+//function specialCase(){
+//    if(sqrt){
+//        // do square root math
+//    }else{
+//       // do exponent math
+//    }
+// }
